@@ -80,7 +80,7 @@ trait JsonSerializable
                 $array[$key] = $value;
             } elseif (is_array($value)) {
                 $array[$key] = $this->arrayValuesToArray($value);
-            } elseif (method_exists($value, 'jsonSerialize')) {
+            } elseif (is_object($value) && method_exists($value, 'jsonSerialize')) {
                 $array[$key] = $value->jsonSerialize();
             }
         }
