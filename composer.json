@@ -1,5 +1,5 @@
 {
-  "name": "myparcelcom/api-sdk",
+  "name": "outgive-inc/api-sdk",
   "description": "Package for communicating with the MyParcel.com API.",
   "type": "library",
   "require": {
